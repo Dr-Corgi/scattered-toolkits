@@ -10,3 +10,6 @@
     response_1
     post_2
     response_2
+
+#### 3. semeval2bert.py
+将SemEval数据转换为可以用BERT进行Fine-tuning的格式。
