@@ -1,5 +1,11 @@
 # scattered-toolkits
 一些平时写的零零散散的脚本，随用随取。
 ### Index
-#### 1. stc_processor.py
-将STC2的数据集转换成[[post, post_emo], [response, response_emo]]格式。
+#### 1. stc2nlpcc.py
+将STC-2的数据转换成NLPCC的数据格式[[post, post_emo], [response, response_emo]]。
+#### 2. stc2plain_text.py
+将STC-2的数据转换为纯文本格式：
+    post_1\n
+    response_1\n
+    post_2\n
+    response_2\n
