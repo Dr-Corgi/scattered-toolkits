@@ -13,3 +13,9 @@
 
 #### 3. semeval2bert.py
 将SemEval数据转换为可以用BERT进行Fine-tuning的格式。
+
+#### 4. nlpcc2bert.py
+将NLPCC数据转换为可以用BERT进行Fine-tuning的格式。
+
+#### 5. bert4nlpcc.py
+适用于NLPCC数据的自定义Processor。
