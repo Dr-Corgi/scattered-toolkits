@@ -1,0 +1,26 @@
+1. 关闭防火墙
+systemctl stop firewalld.service
+
+2. 安装SS
+pip install shadowsocks
+
+3. 创建配置文件
+vi /etc/shadowsocks.json
+内容如下：
+{
+    "server": "server_ip"
+    "port_password":{
+        "port_id": "password"
+    },
+    "timeout":300,
+    "method":"aes-256-cfb"
+}
+
+4. 强制VPS使用IPv6访问谷歌学术
+vi /etc/hosts
+在后面追加：
+## Google Scholar
+2404:6800:4004:81a::200e scholar.google.cn
+2404:6800:4004:81a::200e scholar.google.com.hk
+2404:6800:4004:81a::200e scholar.google.com
+2404:6800:4004:81a::200e scholar.l.google.com
