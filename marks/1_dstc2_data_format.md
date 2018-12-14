@@ -1,4 +1,4 @@
-## Log Object
+## I. Log Object
 #### 1) session-id
 当前调用(Call)的唯一ID
 #### 2) session-date
@@ -38,7 +38,7 @@
   - [batch/cnet/arcs] **word**: 对应的词语，可能对应于“!null”
   - [batch/cnet/arcs] **score**: 对应的分数
 
-## Label Objects
+## II. Label Objects
 #### 1) session-id
 当前调用的唯一ID
 #### 2) caller-id
@@ -63,7 +63,7 @@
 - **comments**: 用户的评价
 - **questionnaire**: 一组问题/回答对
 
-## Tracker Output Objects
+## III. Tracker Output Objects
 #### 1) dataset
 tracker所运行的数据集的名字
 #### 2) wall-time
@@ -79,14 +79,10 @@ tracker所运行的数据集的名字
 - method-label: （？？？
 - requested-slots:（？？？
 
-## Ontology Objects
+## IV. Ontology Objects
 #### 1) requestable
 一组必须由用户请求的槽
 #### 2) method
 一组允许的可能方法的列表
 #### 3) informable
 每个槽用户可能inform的值的列表
-
-
-#### 3) informable槽
-#### 3) informable
