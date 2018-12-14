@@ -18,7 +18,7 @@
   - **start-time**: 系统提示合成开始进行的时间（以秒为单位，float）
   - **end-time**: 系统提示合成结束的时间（以秒为单位，float）
   - **aborted**: 该提示是否已终止，因为系统认为存在来自用户的插入（boolean）
-3. input:
+3. **input**:
   - **start-time**: 进入用户响应的时间（以秒为单位，float）
   - **end-time**: 用户响应结束的时间（以秒为单位，float）
   - **audio-file**: 磁盘上的记录的文件名
@@ -62,3 +62,31 @@
 - **success**: 对话的主观成功与否
 - **comments**: 用户的评价
 - **questionnaire**: 一组问题/回答对
+
+## Tracker Output Objects
+#### 1) dataset
+tracker所运行的数据集的名字
+#### 2) wall-time
+运行所用的时间
+#### 3) sessions
+与数据集中每个调用相对应的结果列表
+1. session-id: 该调用的唯一ID
+2. turns:
+- goal-labels:（？？？
+- goal-labels-joint: 一组联合假设列表。其score的总和不能超过1.余下的概率假定基于用户尚未提及到的槽。
+- [goal-labels-joint] score: 该假设所报告的概率
+- [goal-labels-joint] slots: 一个信息槽到值的映射。
+- method-label: （？？？
+- requested-slots:（？？？
+
+## Ontology Objects
+#### 1) requestable
+一组必须由用户请求的槽
+#### 2) method
+一组允许的可能方法的列表
+#### 3) informable
+每个槽用户可能inform的值的列表
+
+
+#### 3) informable槽
+#### 3) informable
