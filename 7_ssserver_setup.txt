@@ -24,3 +24,4 @@ vi /etc/hosts
 2404:6800:4004:81a::200e scholar.google.com.hk
 2404:6800:4004:81a::200e scholar.google.com
 2404:6800:4004:81a::200e scholar.l.google.com
+2404:6800:4008:803::2001 scholar.googleusercontent.com
