@@ -37,3 +37,28 @@
   - [batch/cnet] **arcs**: 该用户轮中的可能词语列表
   - [batch/cnet/arcs] **word**: 对应的词语，可能对应于“!null”
   - [batch/cnet/arcs] **score**: 对应的分数
+
+## Label Objects
+#### 1) session-id
+当前调用的唯一ID
+#### 2) caller-id
+调用者的唯一ID
+#### 3) turns
+一组label-turn对象，与Log对象的turn相对应，提供了轮次级别上的标注
+1. **turn-index**: 当前turn的index，从0开始（integer）
+2. **audio-file**: 硬盘上记录文件的路径
+3. **transcription**: 用户话语内容的转录（string）
+4. **semantics**: 用户话语正确的对话行为表示
+5. **goal-labels**: 真正的用户目标，看作是从slot映射到值。没有表示的slot说明还没有被用户指定。
+6. **method-label**: 正确的方法（？？？
+7. **requested-slots**: 用户真正请求的槽
+#### 4) task-information 
+描述任务信息的对象
+1. **goal**: 目标/任务的信息
+- **text**: 任务描述
+- **constraints**: 一个slot列表（已知信息？
+- **request-slots**: 用户必须从系统请求的一组slot
+2. **feedback**:  来自用户的主观结果
+- **success**: 对话的主观成功与否
+- **comments**: 用户的评价
+- **questionnaire**: 一组问题/回答对
