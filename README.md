@@ -30,3 +30,6 @@
 
 #### 7. ssserver_setup.txt
 配置ssserver。
+
+#### 8. tc_bot_autorun.sh
+自动运行tc-bot多次并保存运行结果
